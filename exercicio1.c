@@ -28,7 +28,6 @@ void inverterPalavrasFrase(char frase[]) {
 }
 int main(void) {
 	char frase[]="Hello, World! OpenAI is amazing.";
-	printf("Frase a ser invertida: %s\n", frase);
 	inverterPalavrasFrase(frase);
 	printf("Frase invertida, mas com as palavras normais: %s\n", frase);
 	return 0;
