@@ -11,11 +11,25 @@ void inverterPalavrasFrase(char frase[]) {
 		letra_comeco++;
 		letra_final--;
 	}
+	letra_comeco=0;
+	for (int i=0; i<=tamanho; i++) {
+		if (frase[i]==' ' || frase[i]=='\0') {
+			letra_final=i-1;
+			while (letra_comeco<letra_final) {
+				char letra_atual=frase[letra_comeco];
+				frase[letra_comeco]=frase[letra_final];
+				frase[letra_final]=letra_atual;
+				letra_comeco++;
+				letra_final--;
+			}
+			letra_comeco=i+1;
+		}
+	}
 }
 int main(void) {
 	char frase[]="Hello, World! OpenAI is amazing.";
 	printf("Frase a ser invertida: %s\n", frase);
 	inverterPalavrasFrase(frase);
-	printf("Frase com as letras invertidas: %s\n", frase);
+	printf("Frase invertida, mas com as palavras normais: %s\n", frase);
 	return 0;
 }
