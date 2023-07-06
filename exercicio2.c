@@ -15,20 +15,8 @@ void removerLetrasDuplicadas(char string[]){
 	}
 }
 int main(void) {
-	char string1[]="Hello, how are you?";
-	char string2[]="The quick brown fox jumps over the lazy dog.";
-	char string3[]="I love programming in C.";
-	printf("string 1: %s\n", string1);
-	removerLetrasDuplicadas(string1);
-	printf("string invertida, mas com as palavras normais: %s\n", string1);
-	
-	printf("\nstring 2: %s\n", string2);
-	removerLetrasDuplicadas(string2);
-	printf("string invertida, mas com as palavras normais: %s\n", string2);
-	
-	printf("\nstring 3: %s\n", string3);
-	removerLetrasDuplicadas(string3);
-	printf("string invertida, mas com as palavras normais: %s\n", string3);
-	
+	char string[]="Hello, World!";
+	removerLetrasDuplicadas(string);
+	printf("%s\n", string);
 	return 0;
 }
