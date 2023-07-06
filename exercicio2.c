@@ -16,8 +16,7 @@ void removerLetrasDuplicadas(char string[]){
 }
 int main(void) {
 	char string[]="Hello, World!";
-	printf("String que terá seus caractéres duplicados removidos: %s\n", string);
 	removerLetrasDuplicadas(string);
-	printf("String sem os caractéres duplicados: %s\n", string);
+	printf("%s\n", string);
 	return 0;
 }
