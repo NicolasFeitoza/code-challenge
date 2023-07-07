@@ -45,4 +45,5 @@ int main(void) {
     char string1[]="babad";
     encontrarPalindromo(string1);
 	return 0;
+	
 }
