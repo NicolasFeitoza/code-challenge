@@ -26,22 +26,9 @@ int isAnagramOfPalindrome(char string[]) {
         return 0;
     }
 }
-
 int main() {
     char anagrama[]="racecar";
-	char anagrama2[]="hello";
-	char anagrama3[]="rotator";
     if (isAnagramOfPalindrome(anagrama)) {
-        printf("true\n");
-    } else {
-        printf("false\n");
-    }
-	if (isAnagramOfPalindrome(anagrama2)) {
-        printf("true\n");
-    } else {
-        printf("false\n");
-    }
-	if (isAnagramOfPalindrome(anagrama3)) {
         printf("true\n");
     } else {
         printf("false\n");
