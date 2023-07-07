@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 void removerLetrasDuplicadas(char string[]){
-	int tamanho=strlen(string)-1;
+	int tamanho=strlen(string);
 	for (int i=0; i<tamanho; i++) {
 		for(int j=i+1; string[j]!='\0'; j++) {
 			if (string[i]==string[j] && string[i]!=' ' && string[j]!=' ') {
