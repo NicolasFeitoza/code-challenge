@@ -17,4 +17,5 @@ int main(void) {
 	colocarEmMaiusculo(string);
 	printf("%s\n", string);
 	return 0;
+	
 }
